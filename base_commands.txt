@@ -1,10 +1,28 @@
-git init — инициилизация нового репозитория;
+git config --global user.name "Name Surname"      //назначить имя пользователя
+git config --global user.email "somename@mail.ru" //назначить e-mail пользователя
+git config --list                                 //выводит настройки списком
+git help commit                                   //выводит документацию по команде git commit
+git commit --help                                 //то же самое, то и предыдущая команда
 
-git clone [url] — склонировать репозиторий;
+cd E:/name_folder         //заходит в папку name_folder на диске E
 
-git add . — добавить все новые файлы, или git add filename — добавить отдельный файл. Можно и git add folder_name — добавит папку;
+git init                  //инициилизация нового репозитория в текущей папке
+git status                //показывает состояние хранилища в текущей ветке
 
-git commit -a -m «Commit message» — сделать коммит в репозиторий, флаг -a означает что будут индексироваться изменения уже существующих файлов, -m — сообщение коммита;
+git add .                 //добавляет в индекс все неотслеживаемые файлы (из состояния untracked становятся modefied)
+git add file_name.html    //добавляет в индекс конкретный файл
+git add folder_name       //добавляет в индекс папку
+git add --all             //добавляет все файлы untracked в отслеживание и перестраивает индексы
+
+git commit -m "name_commit"     //коммитит изменения только из индекса, присваивая слепку название name_commit
+git commit -a -m "name_commit"  //коммитит изменения, предварительно добавив в индекс все modefied файлы
+
+git clone https://github.com/jquery/jquery.git    //клонирует репозиторий с удаленного источника в текущую папку
+
+git remote add origin https://github.com/futurer1/rep_name.git    //создает псевдоним origin на удаленный репозиторий
+git push -u origin master         //выгружает изменения из ветки master на удаленный репозиторий с псевдонимом origin
+
+
 
 git branch — вывести список всех веток репозитория, значек * будет стоять напротив текущего;
 
