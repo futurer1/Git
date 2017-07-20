@@ -8,5 +8,8 @@
       "name": "Michail Afonin",
       "email": "email@example.com"
     }
-  ]
+  ],
+ "require": {
+   "robmorgan/phinx": "*"
+ }
 }
