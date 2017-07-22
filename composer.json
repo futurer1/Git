@@ -14,7 +14,7 @@
     },
     "autoload": {
         "PSR-4": {
-          "folder\\": ""
+          "Git\\": "git"
         }
     }
 }
