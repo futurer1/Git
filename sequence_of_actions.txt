@@ -1,0 +1,2 @@
+git status
+git checkout ненужные_файлы_из_гита
