@@ -69,6 +69,7 @@ git checkout -b new_branch  //создает новую ветку new_branch и
 
 git branch -d name_branch   //удаляет ветку name_branch, которая до этого была объединена с другой (merged)
 git branch -D name_branch   //жестко удаляет ветку даже если её изменения не были закоммичены и слиты. Может привести к потере данных!
+git branch -m старое-имя новое-имя //переименовывает локальную ветку
 
 git merge name_branch       //сливает ветку name_branch в текущую активную
 
