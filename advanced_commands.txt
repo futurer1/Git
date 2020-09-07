@@ -1,0 +1,16 @@
+
+// -----------------------------------------------
+// Вместо stash можно пользоваться алиасными командами wip и rewip.
+
+[alias]
+  wip="!git add . && git commit -m 'WIP'"
+  rewip="reset --soft HEAD^"
+
+// using:
+git wip
+git checkout <another branch>
+...do something here...
+git checkout -
+git rewip
+
+// -----------------------------------------------
