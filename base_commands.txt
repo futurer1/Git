@@ -38,6 +38,9 @@ git rm --cached file_name         //удаляет файл из индекса
 git mv filename_old filename_new  //переименовывает файл filename_old в filename_new
 git reset file_name               //убирает файл из проиндексированных, чтобы он не попал в коммит
 
+git reset --hard d3eedfd9aef222f0f269438a3a5410c174c3b2c5 // удаление коммитов локально до того, индекс которого указан
+git push --force origin master  // синхронизация изменений reset --hard в удаленном репозитории
+
 git commit -m "name_commit"       //коммитит изменения только из индекса, присваивая слепку название name_commit
 git commit -a -m "name_commit"    //коммитит изменения, предварительно добавив в индекс все modefied файлы
 
@@ -49,6 +52,7 @@ git remote add remote_name url_remote                             //добавл
 git remote add origin https://github.com/futurer1/rep_name.git    //создает псевдоним origin на удаленный репозиторий
 git remote rename remote_name_old remote_name_new   //переименовывает псевдоним прикрепленного удаленного репозитория
 git remote rm remote_name                           //удаляет псевдоним удаленного репозитория
+git remote update origin                    // обновляет данные об удаленных репозиториях
 git push -u origin master                   //выгружает изменения из ветки master на удаленный репозиторий с псевдонимом origin
 git push remote_name --delete name_branch   //удаляет ветку name_branch с удаленного репозитория с псевдонимом remote_name
 
