@@ -72,7 +72,12 @@ git branch --no-merged      //выводит список не слитых ве
 
 git branch name_new_branch  //создает новую ветку с названием name_new_branch
 git checkout name_branch    //переходит в ветку name_branch, она становится активной
+git checkout <hash_commit>  //позиционируется на коммит с хешем <hash_commit> в текущей ветке
 git checkout -b new_branch  //создает новую ветку new_branch и сразу переходит в неё (результат выполнения двух предыдущих команд)
+
+git cherry-pick <hash_commit> //копирует коммит с хешем <hash_commit> и применяет его в текущую ветку
+git cherry-pick <hash_commit> --no-commit // применяет изменения из коммита <hash_commit> на текущую ветку, но не коммитит их, можно редактировать дальше и создать потом свой коммит
+
 
 git branch -d name_branch   //удаляет ветку name_branch, которая до этого была объединена с другой (merged)
 git branch -D name_branch   //жестко удаляет ветку даже если её изменения не были закоммичены и слиты. Может привести к потере данных!
