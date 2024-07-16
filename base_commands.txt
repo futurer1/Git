@@ -63,6 +63,7 @@ git remote rename remote_name_old remote_name_new   //переименовыва
 git remote rm remote_name                           //удаляет псевдоним удаленного репозитория
 git remote update origin                    // обновляет данные об удаленных репозиториях
 git push -u origin master                   //выгружает изменения из ветки master на удаленный репозиторий с псевдонимом origin
+git push --force-with-lease origin origin/my-branch-name // с ключем --force-with-lease проверит, что локальная копия ветки соответствует удаленной версии
 git push remote_name --delete name_branch   //удаляет ветку name_branch с удаленного репозитория с псевдонимом remote_name
 
 Традиционные названия веток:
